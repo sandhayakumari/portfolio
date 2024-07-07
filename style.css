@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: yellowgreen;
+    background-image: url('user-3.jpg'); /* Replace 'background.jpg' with your image */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay; /* Overlay blend mode to make background translucent */
+}
+
+/* Header styling */
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background for header */
+    color: white;
+    padding: 10px 0;
+}
+
+/* Navigation menu styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Home page specific styling */
+#home-main {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+}
+
+#home-main h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#home-main p {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #666;
+}
+
+/* Centered and round image styling for home page */
+#home-main .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home-main .image-container img {
+    width: 200px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image covers the container */
+    border: 5px solid #333; /* Adds a border for better appearance */
+}
+
+/* Grid layout for validation report screenshots */
+.validation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.validation-item {
+    width: 100%;
+    height: 200px; 
+    overflow: hidden; /* Ensure images don't overflow */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.validation-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/* Popup overlay styling */
+.popup-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.popup-overlay:target {
+    display: flex; /* Show the popup overlay when targeted */
+}
+
+.popup-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: block;
+}
+
+.close-popup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer styling */
+footer {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background for footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Project grid layout */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.project-item img {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover; 
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea, form button {
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button styling */
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
